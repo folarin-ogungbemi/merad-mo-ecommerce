@@ -11,10 +11,6 @@ import Category from './Category'
 const Header:React.FC = () => {
     const [showCategory, setShowCategory] = React.useState<boolean>(false)
 
-    const handleshowCategory = () =>{
-        setShowCategory(prevState => !prevState)
-    }
-
   return (
     <>
         <header className="w-full h-20 bg-white sticky top-0 z-40 border-b-[1px] border-b-gray-200">
@@ -29,17 +25,17 @@ const Header:React.FC = () => {
         <nav className='w-full bg-[#f5eef8]'>
             <div className='container h-20 mx-auto flex justify-between content-center px-4'>
                 <span 
-                    className='flex text-[#000] my-auto cursor-pointer text-sm' 
-                    onClick={handleshowCategory}>
+                    className='flex text-[#000] my-auto cursor-pointer text-sm font-normal' 
+                    onMouseEnter={()=>setShowCategory(true)}>
                     {!showCategory ? <RxHamburgerMenu className='my-auto mr-2'/>
                     : <MdClose className='my-auto mr-2'/>}
-                     Shop by Category
+                     Categories
                 </span>
                 <SearchBar/>
                 <Checker/>
             </div>
         </nav>
-        {showCategory && <Category/>}
+        {showCategory && <Category setShowCategory={setShowCategory}/>}
     </>
   )
 }
