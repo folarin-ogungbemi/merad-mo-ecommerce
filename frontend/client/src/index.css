@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root{
+    --text-col:#333333b3;
+    --text-col-hover:#333;
+  }}
+
+
+.nav-links{
+  position: relative;
+}
+
+.nav-links::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+  background-color: #333;
+}
+
+.nav-links:hover::after{
+  width: 100%;
+}
