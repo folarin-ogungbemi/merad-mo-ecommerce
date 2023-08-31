@@ -3,7 +3,7 @@ import {BsSearch} from 'react-icons/bs'
 
 const SearchBar:React.FC = () => {
   return (
-    <form action="#">
+    <form action="#" className='self-center'>
       <label className="relative block w-full lg:w-[600px] h-[50px]">
         <span className="sr-only">Search</span>
         <span className="absolute inset-y-0 right-0 flex items-center pr-5">
