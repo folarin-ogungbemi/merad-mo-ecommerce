@@ -17,8 +17,31 @@ export default {
     },
       textColor:{
         skin:{
+          pry_text:'var(--pry-col)',
+          sec_text:'var(--sec-col)',
+          links:'var(--links)',
+          links_hover:'var(--links-hover)',
           text_col:'var(--text-col)',
           text_col_hover:'var(--text-col-hover)',
+          button_text:'var(--button-text-col)',
+          button_text_hover:'var(--button-text-col-hover)',
+          button_bg:'var(--button-bg-col)',
+          button_bg_hover:'var(--button-bg-col-hover)',
+        }
+    },
+      borderColor:{
+        skin:{
+          section_divide:'var(--section-divide)'
+        }
+      },
+      backgroundColor:{
+        skin:{
+          auto_bg:'var(--auto-col)',
+          button_bg:'var(--button-bg-col)',
+          button_bg_hover:'var(--button-bg-col-hover)',
+          pry_bg:'var(--pry-col)',
+          sec_bg:'var(--sec-col)',
+          
         }
     },
   },

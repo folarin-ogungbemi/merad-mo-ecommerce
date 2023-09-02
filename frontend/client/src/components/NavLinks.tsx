@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom'
 
 const NavLinks:React.FC = () => {
 
-    const NavLinks = ['Home', 'Products', 'About', 'Contact']
+    const NavLinks = ['home', 'products', 'about', 'blog']
 
     return (
-        <aside className='flex space-x-5'>
+        <ul className='flex space-x-5'>
             {NavLinks.map((nav, navIndex) =>
-            <nav className='font-medium text-[#333333cc]'>
-                <Link key={navIndex} to={nav}>{nav}</Link>
-            </nav>)}
-        </aside>
+            <li className='selection:text-sm text-skin-links hover:text-skin-links_hover capitalize nav-links py-[0.5px]'>
+                <Link key={navIndex} to={nav === 'home' ? '/' : nav}>{nav}</Link>
+            </li>)}
+        </ul>
     )
 }
 

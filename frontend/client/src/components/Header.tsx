@@ -1,7 +1,7 @@
 import React from 'react'
 import NavLinks from './NavLinks'
 import ContactMo from './ContactMo'
-import {RxHamburgerMenu} from 'react-icons/rx'
+import {AiOutlineBars} from 'react-icons/ai'
 import {MdClose} from 'react-icons/md'
 import SearchBar from './SearchBar'
 import Checker from './Checker'
@@ -13,7 +13,7 @@ const Header:React.FC = () => {
 
   return (
     <>
-        <header className="w-full h-20 bg-white sticky top-0 z-40 border-b-[1px] border-b-gray-200">
+        <header className="w-full h-20 bg-skin-auto_bg sticky top-0 z-40 border-b-[1px] border-b-skin-section_divide">
             <nav className="h-full px-4 container mx-auto relative">
                 <div className='flex items-center justify-between h-full'>
                     <h1 className='text-2xl font-bold'>Merad & Mo</h1>
@@ -22,12 +22,12 @@ const Header:React.FC = () => {
                 </div>
             </nav>
         </header>
-        <nav className='w-full bg-[#f5eef8]'>
+        <nav className='w-full bg-skin-pry_bg'>
             <div className='container h-20 mx-auto flex justify-between content-center px-4'>
                 <span 
-                    className='flex text-[#000] my-auto cursor-pointer text-sm font-normal' 
+                    className='flex text-skin-text_col my-auto cursor-pointer text-sm font-normal' 
                     onMouseEnter={()=>setShowCategory(true)}>
-                    {!showCategory ? <RxHamburgerMenu className='my-auto mr-2'/>
+                    {!showCategory ? <AiOutlineBars className='my-auto mr-2'/>
                     : <MdClose className='my-auto mr-2'/>}
                      Categories
                 </span>

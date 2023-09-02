@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ContactMo:React.FC = () => {
   return (
-    <Link to='/' className='bg-[#000] px-5 py-2 text-[#fff] text-md'>Contact Mo</Link>
+    <Link to='/' className='bg-skin-button_bg hover:bg-skin-button_bg_hover px-5 py-2 font-medium text-skin-button_text hover:text-skin-button_text_hover text-md'>Contact Mo</Link>
   )
 }
 

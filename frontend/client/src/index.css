@@ -4,8 +4,18 @@
 
 @layer base {
   :root{
-    --text-col:#333333b3;
-    --text-col-hover:#333;
+    --pry-col: #f5eef8;
+    --sec-col: #5d3877;
+    --auto-col: #fff;
+    --links: #333;
+    --links-hover: #5d3877;
+    --text-col:#333;
+    --text-col-hover:#5d3877;
+    --button-text-col:#fff;
+    --button-text-col-hover:#333;
+    --button-bg-col:#5d3877;
+    --button-bg-col-hover:#f5eef8;
+    --section-divide:#ddd;
   }}
 
 
@@ -22,7 +32,7 @@
   width: 0%;
   height: 2px;
   transition: all 0.3s ease-in-out;
-  background-color: #333;
+  background-color: var(--button-bg-col);
 }
 
 .nav-links:hover::after{

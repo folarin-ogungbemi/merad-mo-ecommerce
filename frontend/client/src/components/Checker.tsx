@@ -6,7 +6,7 @@ import {PiShoppingCart} from 'react-icons/pi'
 const Checker:React.FC = () => {
   return (
     <div className='justify-self-end flex justify-between items-center space-x-5'>
-        <div className='relative flex flex-col justify-center align-center space-y-1 cursor-pointer z-100'>
+        <div className='relative flex flex-col justify-center align-center space-y-1 cursor-pointer z-100 text-skin-links hover:text-skin-links_hover'>
           <span className='flex mx-auto text-xs'>Hello,<BsPersonFill className=' ml-1 my-auto'/></span>
           <span className='flex text-sm'>
             <span className='mr-1 font-medium'>Account & Orders</span>
@@ -20,8 +20,8 @@ const Checker:React.FC = () => {
             </div>
           )} */}
         </div>
-        <div className='flex flex-col justify-center align-center space-y-1 cursor-pointer'><BsHeart className='mx-auto' /> <span className='text-sm font-medium'>Wishlist</span></div>
-        <div className='flex flex-col justify-center align-center space-y-1 cursor-pointer'><PiShoppingCart className='mx-auto' /> <span className='text-sm font-medium'>Basket</span></div>
+        <div className='flex flex-col justify-center align-center space-y-1 cursor-pointer text-skin-links hover:text-skin-links_hover'><div className='relative w-fit h-fit'><BsHeart className='mx-auto' /> <span className='absolute bottom-[-50%] right-[-50%] px-1 bg-skin-sec_bg text-skin-pry_text rounded-full text-xs w-4 h-4 flex justify-center text-center'>0</span></div> <span className='text-sm font-medium'>Wishlist</span></div>
+        <div className='flex flex-col justify-center align-center space-y-1 cursor-pointer text-skin-links hover:text-skin-links_hover'><div className='relative w-fit h-fit'><PiShoppingCart className='mx-auto' /> <span className='absolute bottom-[-50%] right-[-50%] px-1 bg-skin-sec_bg text-skin-pry_text rounded-full text-xs w-4 h-4 flex justify-center text-center'>0</span></div><span className='text-sm font-medium'>Basket</span></div>
     </div>
   )
 }
