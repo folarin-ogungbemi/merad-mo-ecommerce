@@ -1,7 +1,7 @@
 import React from 'react'
 import {BsPersonFill, BsHeart} from 'react-icons/bs'
-import {PiShoppingCart} from 'react-icons/pi'
-
+import {HiOutlineShoppingBag} from 'react-icons/hi'
+import {Link} from 'react-router-dom'
 
 const Checker:React.FC = () => {
   return (
@@ -20,10 +20,10 @@ const Checker:React.FC = () => {
             </div>
           )} */}
         </div>
-        <div className='flex flex-col justify-center align-center space-y-1 cursor-pointer text-skin-links hover:text-skin-links_hover'><div className='relative w-fit h-fit'><BsHeart className='mx-auto' /> <span className='absolute bottom-[-50%] right-[-50%] px-1 bg-skin-sec_bg text-skin-pry_text rounded-full text-xs w-4 h-4 flex justify-center text-center'>0</span></div> <span className='text-sm font-medium'>Wishlist</span></div>
-        <div className='flex flex-col justify-center align-center space-y-1 cursor-pointer text-skin-links hover:text-skin-links_hover'><div className='relative w-fit h-fit'><PiShoppingCart className='mx-auto' /> <span className='absolute bottom-[-50%] right-[-50%] px-1 bg-skin-sec_bg text-skin-pry_text rounded-full text-xs w-4 h-4 flex justify-center text-center'>0</span></div><span className='text-sm font-medium'>Basket</span></div>
+        <Link to='' className='flex flex-col justify-center align-center space-y-1 cursor-pointer text-skin-links hover:text-skin-links_hover'><div className='relative w-fit h-fit mx-auto'><BsHeart className='mx-auto font-medium'/> <span className='absolute bottom-[-50%] right-[-50%] bg-skin-sec_bg text-skin-pry_text rounded-full text-xs w-4 h-4 flex justify-center text-center'>0</span></div> <span className='text-sm font-medium'>Wishlist</span></Link>
+        <Link to='' className='flex flex-col justify-center align-center space-y-1 cursor-pointer text-skin-links hover:text-skin-links_hover'><div className='relative w-fit h-fit mx-auto'><HiOutlineShoppingBag className='mx-auto text-lg' /> <span className='absolute bottom-[-50%] right-[-50%] bg-skin-sec_bg text-skin-pry_text rounded-full text-xs w-4 h-4 flex justify-center text-center'>0</span></div><span className='text-sm font-medium'>Basket</span></Link>
     </div>
   )
 }
 
-export default Checker
+export default Checker;
