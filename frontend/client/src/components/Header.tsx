@@ -1,8 +1,10 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import NavLinks from './NavLinks'
-import ContactMo from './ContactMo'
 import {AiOutlineBars} from 'react-icons/ai'
 import {MdClose} from 'react-icons/md'
+import {SlEnvolopeLetter} from 'react-icons/sl'
+
 import SearchBar from './SearchBar'
 import Checker from './Checker'
 import Category from './Category'
@@ -14,12 +16,10 @@ const Header:React.FC = () => {
   return (
     <>
         <header className="w-full h-20 bg-skin-auto_bg sticky top-0 z-40 border-b-[1px] border-b-skin-section_divide">
-            <nav className="h-full px-4 container mx-auto relative">
-                <div className='flex items-center justify-between h-full'>
-                    <h1 className='text-2xl font-bold'>Merad & Mo</h1>
-                    <NavLinks />
-                    <ContactMo/>
-                </div>
+            <nav className="h-full flex justify-between items-center px-4 container mx-auto">
+                <Link to='' className='flex hover:underline cursor-pointer'><SlEnvolopeLetter className='mr-1 my-auto'/><span>Newsletter</span></Link>
+                <Link to='/' className='text-2xl font-bold text-center'>Merad & Mo</Link>
+                <NavLinks />
             </nav>
         </header>
         <nav className='w-full bg-skin-pry_bg'>
